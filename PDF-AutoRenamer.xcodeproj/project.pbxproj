@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04BC45F52BAA564F00C9209D /* PDF_AutoRenamerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BC45F42BAA564F00C9209D /* PDF_AutoRenamerApp.swift */; };
+		04BC45F72BAA564F00C9209D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BC45F62BAA564F00C9209D /* ContentView.swift */; };
+		04BC45F92BAA565100C9209D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BC45F82BAA565100C9209D /* Assets.xcassets */; };
+		04BC45FD2BAA565100C9209D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BC45FC2BAA565100C9209D /* Preview Assets.xcassets */; };
+		04BC46072BAA565200C9209D /* PDF_AutoRenamerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BC46062BAA565200C9209D /* PDF_AutoRenamerTests.swift */; };
+		04BC46112BAA565200C9209D /* PDF_AutoRenamerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BC46102BAA565200C9209D /* PDF_AutoRenamerUITests.swift */; };
+		04BC46132BAA565200C9209D /* PDF_AutoRenamerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BC46122BAA565200C9209D /* PDF_AutoRenamerUITestsLaunchTests.swift */; };
+		04BC46202BAA573000C9209D /* PDFProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BC461F2BAA573000C9209D /* PDFProcessor.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04BC46032BAA565200C9209D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04BC45E92BAA564F00C9209D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04BC45F02BAA564F00C9209D;
+			remoteInfo = "PDF-AutoRenamer";
+		};
+		04BC460D2BAA565200C9209D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04BC45E92BAA564F00C9209D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04BC45F02BAA564F00C9209D;
+			remoteInfo = "PDF-AutoRenamer";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04BC45F12BAA564F00C9209D /* PDF-AutoRenamer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PDF-AutoRenamer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04BC45F42BAA564F00C9209D /* PDF_AutoRenamerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDF_AutoRenamerApp.swift; sourceTree = "<group>"; };
+		04BC45F62BAA564F00C9209D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		04BC45F82BAA565100C9209D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04BC45FA2BAA565100C9209D /* PDF_AutoRenamer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PDF_AutoRenamer.entitlements; sourceTree = "<group>"; };
+		04BC45FC2BAA565100C9209D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		04BC46022BAA565200C9209D /* PDF-AutoRenamerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PDF-AutoRenamerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04BC46062BAA565200C9209D /* PDF_AutoRenamerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDF_AutoRenamerTests.swift; sourceTree = "<group>"; };
+		04BC460C2BAA565200C9209D /* PDF-AutoRenamerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PDF-AutoRenamerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04BC46102BAA565200C9209D /* PDF_AutoRenamerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDF_AutoRenamerUITests.swift; sourceTree = "<group>"; };
+		04BC46122BAA565200C9209D /* PDF_AutoRenamerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDF_AutoRenamerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		04BC461F2BAA573000C9209D /* PDFProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFProcessor.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04BC45EE2BAA564F00C9209D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04BC45FF2BAA565200C9209D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04BC46092BAA565200C9209D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04BC45E82BAA564F00C9209D = {
+			isa = PBXGroup;
+			children = (
+				04BC45F32BAA564F00C9209D /* PDF-AutoRenamer */,
+				04BC46052BAA565200C9209D /* PDF-AutoRenamerTests */,
+				04BC460F2BAA565200C9209D /* PDF-AutoRenamerUITests */,
+				04BC45F22BAA564F00C9209D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04BC45F22BAA564F00C9209D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04BC45F12BAA564F00C9209D /* PDF-AutoRenamer.app */,
+				04BC46022BAA565200C9209D /* PDF-AutoRenamerTests.xctest */,
+				04BC460C2BAA565200C9209D /* PDF-AutoRenamerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04BC45F32BAA564F00C9209D /* PDF-AutoRenamer */ = {
+			isa = PBXGroup;
+			children = (
+				04BC45F42BAA564F00C9209D /* PDF_AutoRenamerApp.swift */,
+				04BC45F62BAA564F00C9209D /* ContentView.swift */,
+				04BC45F82BAA565100C9209D /* Assets.xcassets */,
+				04BC45FA2BAA565100C9209D /* PDF_AutoRenamer.entitlements */,
+				04BC45FB2BAA565100C9209D /* Preview Content */,
+				04BC461F2BAA573000C9209D /* PDFProcessor.swift */,
+			);
+			path = "PDF-AutoRenamer";
+			sourceTree = "<group>";
+		};
+		04BC45FB2BAA565100C9209D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				04BC45FC2BAA565100C9209D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		04BC46052BAA565200C9209D /* PDF-AutoRenamerTests */ = {
+			isa = PBXGroup;
+			children = (
+				04BC46062BAA565200C9209D /* PDF_AutoRenamerTests.swift */,
+			);
+			path = "PDF-AutoRenamerTests";
+			sourceTree = "<group>";
+		};
+		04BC460F2BAA565200C9209D /* PDF-AutoRenamerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04BC46102BAA565200C9209D /* PDF_AutoRenamerUITests.swift */,
+				04BC46122BAA565200C9209D /* PDF_AutoRenamerUITestsLaunchTests.swift */,
+			);
+			path = "PDF-AutoRenamerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04BC45F02BAA564F00C9209D /* PDF-AutoRenamer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04BC46162BAA565200C9209D /* Build configuration list for PBXNativeTarget "PDF-AutoRenamer" */;
+			buildPhases = (
+				04BC45ED2BAA564F00C9209D /* Sources */,
+				04BC45EE2BAA564F00C9209D /* Frameworks */,
+				04BC45EF2BAA564F00C9209D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PDF-AutoRenamer";
+			productName = "PDF-AutoRenamer";
+			productReference = 04BC45F12BAA564F00C9209D /* PDF-AutoRenamer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04BC46012BAA565200C9209D /* PDF-AutoRenamerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04BC46192BAA565200C9209D /* Build configuration list for PBXNativeTarget "PDF-AutoRenamerTests" */;
+			buildPhases = (
+				04BC45FE2BAA565200C9209D /* Sources */,
+				04BC45FF2BAA565200C9209D /* Frameworks */,
+				04BC46002BAA565200C9209D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04BC46042BAA565200C9209D /* PBXTargetDependency */,
+			);
+			name = "PDF-AutoRenamerTests";
+			productName = "PDF-AutoRenamerTests";
+			productReference = 04BC46022BAA565200C9209D /* PDF-AutoRenamerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04BC460B2BAA565200C9209D /* PDF-AutoRenamerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04BC461C2BAA565200C9209D /* Build configuration list for PBXNativeTarget "PDF-AutoRenamerUITests" */;
+			buildPhases = (
+				04BC46082BAA565200C9209D /* Sources */,
+				04BC46092BAA565200C9209D /* Frameworks */,
+				04BC460A2BAA565200C9209D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04BC460E2BAA565200C9209D /* PBXTargetDependency */,
+			);
+			name = "PDF-AutoRenamerUITests";
+			productName = "PDF-AutoRenamerUITests";
+			productReference = 04BC460C2BAA565200C9209D /* PDF-AutoRenamerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04BC45E92BAA564F00C9209D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					04BC45F02BAA564F00C9209D = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					04BC46012BAA565200C9209D = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 04BC45F02BAA564F00C9209D;
+					};
+					04BC460B2BAA565200C9209D = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 04BC45F02BAA564F00C9209D;
+					};
+				};
+			};
+			buildConfigurationList = 04BC45EC2BAA564F00C9209D /* Build configuration list for PBXProject "PDF-AutoRenamer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04BC45E82BAA564F00C9209D;
+			productRefGroup = 04BC45F22BAA564F00C9209D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04BC45F02BAA564F00C9209D /* PDF-AutoRenamer */,
+				04BC46012BAA565200C9209D /* PDF-AutoRenamerTests */,
+				04BC460B2BAA565200C9209D /* PDF-AutoRenamerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04BC45EF2BAA564F00C9209D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04BC45FD2BAA565100C9209D /* Preview Assets.xcassets in Resources */,
+				04BC45F92BAA565100C9209D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04BC46002BAA565200C9209D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04BC460A2BAA565200C9209D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04BC45ED2BAA564F00C9209D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04BC46202BAA573000C9209D /* PDFProcessor.swift in Sources */,
+				04BC45F72BAA564F00C9209D /* ContentView.swift in Sources */,
+				04BC45F52BAA564F00C9209D /* PDF_AutoRenamerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04BC45FE2BAA565200C9209D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04BC46072BAA565200C9209D /* PDF_AutoRenamerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04BC46082BAA565200C9209D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04BC46112BAA565200C9209D /* PDF_AutoRenamerUITests.swift in Sources */,
+				04BC46132BAA565200C9209D /* PDF_AutoRenamerUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04BC46042BAA565200C9209D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04BC45F02BAA564F00C9209D /* PDF-AutoRenamer */;
+			targetProxy = 04BC46032BAA565200C9209D /* PBXContainerItemProxy */;
+		};
+		04BC460E2BAA565200C9209D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04BC45F02BAA564F00C9209D /* PDF-AutoRenamer */;
+			targetProxy = 04BC460D2BAA565200C9209D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		04BC46142BAA565200C9209D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04BC46152BAA565200C9209D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		04BC46172BAA565200C9209D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "PDF-AutoRenamer/PDF_AutoRenamer.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PDF-AutoRenamer/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "wanghao.PDF-AutoRenamer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04BC46182BAA565200C9209D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "PDF-AutoRenamer/PDF_AutoRenamer.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PDF-AutoRenamer/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "wanghao.PDF-AutoRenamer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		04BC461A2BAA565200C9209D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "wanghao.PDF-AutoRenamerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PDF-AutoRenamer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PDF-AutoRenamer";
+			};
+			name = Debug;
+		};
+		04BC461B2BAA565200C9209D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "wanghao.PDF-AutoRenamerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PDF-AutoRenamer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PDF-AutoRenamer";
+			};
+			name = Release;
+		};
+		04BC461D2BAA565200C9209D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "wanghao.PDF-AutoRenamerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "PDF-AutoRenamer";
+			};
+			name = Debug;
+		};
+		04BC461E2BAA565200C9209D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "wanghao.PDF-AutoRenamerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "PDF-AutoRenamer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04BC45EC2BAA564F00C9209D /* Build configuration list for PBXProject "PDF-AutoRenamer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04BC46142BAA565200C9209D /* Debug */,
+				04BC46152BAA565200C9209D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04BC46162BAA565200C9209D /* Build configuration list for PBXNativeTarget "PDF-AutoRenamer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04BC46172BAA565200C9209D /* Debug */,
+				04BC46182BAA565200C9209D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04BC46192BAA565200C9209D /* Build configuration list for PBXNativeTarget "PDF-AutoRenamerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04BC461A2BAA565200C9209D /* Debug */,
+				04BC461B2BAA565200C9209D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04BC461C2BAA565200C9209D /* Build configuration list for PBXNativeTarget "PDF-AutoRenamerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04BC461D2BAA565200C9209D /* Debug */,
+				04BC461E2BAA565200C9209D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04BC45E92BAA564F00C9209D /* Project object */;
+}
